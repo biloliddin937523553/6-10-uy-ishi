@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+
+            background-image: url(https://img.freepik.com/premium-vector/foggy-weather-night-mobile-wallpaper_771942-3.jpg?w=360);
+        }
+        body{
+            background-color: blueviolet;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #des{
+            text-align: center;
+            position: absolute;
+            top: 80px;
+            font-size: 40px;
+        }
+        #cityName{
+            position: absolute;
+            top: 150px;
+            text-align: center;
+        }
+        #gradus{
+            font-size: 63px;
+            position: absolute;
+            top: 150px;
+            text-align: center;
+
+        }
+        .cont .div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 10px;
+        }
+        .container img{
+            position: absolute;
+            top: 320px;
+            margin-left: -45px;
+        } 
+        input{
+            background: #000;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            font-size: 30px;
+            padding: 20px;
+            height: 20px;
+        }
+        .cont{
+            background: white;
+            border-radius: 10px;
+            height: 500px;
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            position: absolute;
+            top: 270px;
+            margin-left: 140px;
+            text-align: center;
+        }
+        button{
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="container">
+            <img  alt="" id="img1">
+            <h1>Weather</h1>
+           <div class="div1">
+            <h2 id="cityName"></h2>
+            <p id="gradus"></p>
+            <p id="des"></p>
+           </div>
+        </div>
+        <div class="div">
+            <input type="text" name="" id="inp">
+            <button id="btn">OK</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
